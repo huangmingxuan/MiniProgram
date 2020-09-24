@@ -1,0 +1,6 @@
+<w-category-count 
+  category_count="{{categoryCount}}"
+  bind:countclick="countclickitem"
+  countItem="{{countitem}}"
+ >
+</w-category-count>

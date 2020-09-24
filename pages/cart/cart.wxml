@@ -1,0 +1,6 @@
+<view class="cart">
+<!-- 商品数据 -->
+<cart-list cartList="{{cartlist}}" bind:Cartclick="cartClick"></cart-list>
+<!-- 全选按钮 -->
+<bottom-bar bind:toallchecked="ToallChecked" allchecked="{{allChecked}}" allprice="{{allPrice}}" ckelenght="{{ckeLenght}}"></bottom-bar>
+</view>

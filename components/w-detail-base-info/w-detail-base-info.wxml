@@ -1,0 +1,17 @@
+<view class="base-info">
+  <scroll-view scroll-y  class="base-info-item">
+  <view class="info-title">{{goodsinfo.title}}</view>
+  <view class="info-price">
+      <text class="n-price">{{goodsinfo.price}}</text>
+      <text class="o-price">{{goodsinfo.oldPrice}}</text>
+      <text wx:if="{{goodsinfo.discount}}" class="discount">{{goodsinfo.discount}}</text>
+  </view>
+  <view class="info-other">
+      <text>{{goodsinfo.columns[0]}}</text>
+      <text>{{goodsinfo.columns[1]}}</text>
+      <text>{{goodsinfo.service[goodsinfo.service.length-1].name}}</text>
+  </view>
+</scroll-view>
+
+</view>
+

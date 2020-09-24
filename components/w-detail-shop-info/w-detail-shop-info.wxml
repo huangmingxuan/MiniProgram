@@ -1,0 +1,35 @@
+<view class="shop-info">
+  <view class="shop-top">
+      <view><image src="{{Shop.logo}}"></image></view>
+      <text class="title">{{Shop.name}}</text>
+  </view>
+  <view class="shop-middle">
+      <view class="shop-middle-item shop-middle-left">
+          <view class="info-sells">
+              <view class="sells-count">
+                  {{Shop.sells | sellCountFilter}}
+              </view>
+              <view class="sells-text">总销量</view>
+          </view>
+          <view class="info-goods">
+              <view class="goods-count">
+                {{Shop.goodsCount}}
+              </view>
+              <view class="goods-text">全部宝贝</view>
+          </view>
+      </view>
+      <view class="shop-middle-item shop-middle-right">
+        <block wx:for="{{Shop.score}}" wx:key="index">
+          <rich-text>
+            <text>{{item.name}}</text>
+            <text class="score" class="{{item.isBetter?'score-better':''}}">{{item.score}}</text>
+            <text class="better" class="{{item.isBetter?'better-more':''}}"><text class="xuan" >{{item.isBetter?'高':'低'}}</text></text>
+          </rich-text>
+        </block>
+      </view>
+  </view>
+  <view class="shop-bottom">
+        <view class="enter-shop">进店逛逛</view>
+  </view>
+</view>
+

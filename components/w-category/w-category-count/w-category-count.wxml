@@ -1,0 +1,30 @@
+<view class="category">
+  <!-- 左边数据 -->
+  <view class="count-left">
+  <scroll-view scroll-y="true" class="count-left-item">
+ 
+          <block wx:for="{{category_count}}" wx:key="index" wx:for-item="item1">
+            <view class="count-left-list  {{index == countIndex?'active': ''}}"  bind:tap="countClick" data-index="{{index}}" >
+              <view>{{item1.title}}</view>
+            </view>
+          </block>
+  
+</scroll-view>
+  <!-- 右边数据 -->
+    <scroll-view scroll-y="true" class="count-right">
+      <block  wx:for="{{countItem}}" wx:for-item="item2">
+        <text class="title">{{item2.info.title}}</text>
+        <view class="count-right-tp">
+         
+          <navigator wx:for="{{item2.list}}" wx:key="index" wx:for-item="item3">
+            <image src="{{item3.image}}" mode="widthFix"></image>
+            <text>{{item3.title}}</text> 
+          </navigator>
+           
+        </view>
+      </block>
+    </scroll-view>
+    
+  </view>
+
+</view>

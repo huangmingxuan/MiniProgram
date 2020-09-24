@@ -1,0 +1,104 @@
+.shop-info {
+  padding: 30rpx 8rpx;
+  border-bottom: 5rpx solid #f2f5f8;
+}
+
+.shop-top {
+  line-height: 45rpx;
+  /* 让元素垂直中心对齐 */
+  display: flex;
+  align-items: center;
+  
+}
+
+.shop-top image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: 2rpx solid rgba(0,0,0,.1);
+}
+
+
+.shop-top .title {
+  margin-left: 30rpx;
+  vertical-align: center;
+
+}
+
+.shop-middle {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.shop-middle-item {
+  flex: 1;
+}
+
+.shop-middle-left {
+  display: flex;
+  justify-content: space-evenly;
+  color: #333;
+  text-align: center;
+  border-right: 6rpx solid rgba(0,0,0,.1);
+}
+
+.sells-count, .goods-count {
+  font-size: 30rpx;
+}
+
+.sells-text, .goods-text {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.shop-middle-right {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.shop-middle-right rich-text{
+  width: 140rpx;
+  margin-left: 60px;
+}
+
+.shop-middle-right text {
+  display: inline-block;
+  width: 120rpx;
+  text-align: center;
+
+}
+
+.shop-middle-right .score {
+  color: #5ea732;
+}
+
+.shop-middle-right .score-better {
+  color: #f13e3a;
+}
+
+.shop-middle-right .better .xuan {
+  background-color: #5ea732;
+  color: #fff;
+  text-align: center;
+}
+
+.shop-middle-right .better-more .xuan {
+  background-color: #f13e3a;
+}
+
+.shop-bottom {
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.enter-shop {
+  display: inline-block;
+  font-size: 30rpx;
+  background-color: #f2f5f8;
+  width: 300rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 20rpx;
+}

@@ -1,0 +1,22 @@
+<view class="btm_tool">
+  <view class="tool_item">
+   
+    <view>客服</view>
+    <button open-type="contact"></button>
+  </view>
+  <view class="tool_item">
+   
+    <view>店铺</view>
+    <button ></button>
+  </view>
+  <navigator open-type="switchTab" url="/pages/cart/index" class="tool_item">
+    
+    <view>收藏</view>
+  </navigator>
+  <view class="tool_item btn_cart " bindtap="handleCartAdd">
+  加入购物车
+  </view>
+  <view class="tool_item btn_buy">
+    立即购买
+  </view>
+</view>

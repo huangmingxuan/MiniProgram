@@ -1,0 +1,10 @@
+<!-- 详情s商品播图展示 -->
+<w-swiper list="{{topImages}}" isok="{{true}}" />
+<!-- 商品信息 -->
+<w-detail-base-info goodsinfo="{{goodsInfo}}" />
+<!-- 店铺信息 -->
+<w-detail-shop-info Shop="{{shop}}"></w-detail-shop-info>
+<!-- 商品的详情数据 -->
+<w-detail-goods-info detailinfo="{{detailInfo}}"></w-detail-goods-info>
+<!-- 购物车 -->
+<w-detail-bottom bind:addCart="addToCart"></w-detail-bottom>

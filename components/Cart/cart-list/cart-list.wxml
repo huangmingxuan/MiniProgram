@@ -1,0 +1,27 @@
+<view class="cart-list">
+  <scroll-view class="cart-scroll" scroll-y>
+    <block wx:for="{{cartList}}" wx:key="index" wx:for-item="item1">
+      <view class="shop-item">
+
+        <view class="item-selector">
+          <checkbox-group bind:tap="cartClick"data-id="{{item1.iid}}">
+            <checkbox checked="{{item1.checked}}"></checkbox>
+          </checkbox-group>
+        </view>
+
+        <view class="item-img">
+          <image src="{{item1.image}}" mode="heightFix"></image>
+        </view>
+
+        <view class="item-info">
+          <view class="item-title">{{item1.title}}</view>
+          <view class="item-desc">商品描述: {{item1.desc}}</view>
+          <view class="info-bottom">
+            <view class="item-price left">￥{{item1.price}}</view>
+            <view class="item-count right">x{{item1.num}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,18 @@
+<!-- 轮播图 -->
+<w-swiper list="{{banners}}"></w-swiper>
+<!-- 推荐详情页 -->
+<w-recommend list="{{recommends}}"  bind:imageload="handleImageLoad"></w-recommend>
+<view class="popular">
+  <image src="../../assets/home/popular_bg.jpg" mode="widthFix"></image>
+</view>
+<!-- tab-control -->
+<w-tab-control titles="{{titles}}"
+               bind:tabclick="handleTabClick"
+               id="tab-control"
+               class="{{isTabFixed ? 'fixed': ''}}"/>
+<w-tab-control titles="{{titles}}" wx:if="{{isTabFixed}}"/>
+<!-- 商品数据 -->
+<w-goods goods="{{goods[currentType].list}}" />
+<!-- 回到顶部 -->
+
+<w-back-top wx:if="{{showBackTop}}"/>

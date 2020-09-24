@@ -1,0 +1,50 @@
+
+.category {
+  display: flex;
+}
+.count-left {
+ display: flex;
+ height: 1050rpx;
+}
+.count-left-item{
+  flex: 2;
+  
+}
+.count-left-list {
+  display: flex;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.active {
+  color: #ff5777;
+}
+.count-right {
+  flex: 5;
+
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60rpx;
+}
+.count-right-tp{
+  display: flex;
+  flex-wrap: wrap;
+}
+.count-right-tp navigator{
+  width: 50%;
+  height: 100%;
+ 
+}
+.count-right-tp navigator image{
+  width: 100%;
+  height: 100%;
+}
+.count-right-tp navigator text{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}

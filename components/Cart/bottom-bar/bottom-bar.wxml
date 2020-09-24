@@ -1,0 +1,8 @@
+<view class="bottom-menu">
+  <checkbox-group class="select-all" bind:tap="allclick">
+    <checkbox checked="{{allchecked}}"></checkbox>
+  </checkbox-group>
+  <text style="font-size: 30rpx; text-align: center;">全选</text>
+  <text class="total-price">合计: ¥{{allprice}}</text>
+  <text class="buy-product">去计算({{ckelenght}})</text>
+</view>

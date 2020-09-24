@@ -1,0 +1,45 @@
+.base-info {
+  margin-top: 15px;
+  padding: 0 8px;
+  color: #999;
+  border-bottom: 5px solid #f2f5f8;
+}
+
+.info-title {
+  color: #222
+}
+.info-price {
+  margin-top: 10px;
+}
+.info-price .n-price {
+  font-size: 24px;
+  color: #ff5777;
+}
+
+.info-price .o-price {
+  font-size: 13px;
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+
+.info-price .discount {
+  font-size: 25rpx;
+  padding: 2rpx 5rpx;
+  color: #fff;
+  background-color: #ff5777;
+  border-radius: 8rpx;
+  margin-left: 5rpx;
+
+  /*让元素上浮一些: 使用相对定位即可*/
+  position: relative;
+  top: -8rpx;
+}
+.info-other {
+  margin-top: 15px;
+  line-height: 30px;
+  display: flex;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(100,100,100,.1);
+  justify-content: space-between;
+}
+

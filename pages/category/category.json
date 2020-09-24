@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-category-count" :"../../components/w-category/w-category-count/w-category-count"
+  },
+  "navigationBarTitleText": "分类"
+}
